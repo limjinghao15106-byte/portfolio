@@ -1,5 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
 h1 {
-    background-color: black;
+    background: linear-gradient(black , #182635);
     margin-top: 0;
     margin-bottom: 0;
     color: white;
@@ -18,7 +21,7 @@ nav ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    background:black;
+    background:linear-gradient(#182635 , #21303f );
     padding: 20px;
     margin: 0;
     padding: 20px;
@@ -27,25 +30,25 @@ nav ul{
 }
 nav a{
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 10px;
 }
 
 nav a:hover {
-    background-color:white;
-    color: black;
+    background-color:#0c2745;
+    color: white;
 }
 nav {
    margin: 0;
    position: sticky;
    top: 0;
+   width: 100%;
    
 }
 /*Section1*/
 .Intro {
     background-color: rgb(206, 204, 204);
-    width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
@@ -63,8 +66,8 @@ nav {
     display:flex;
     gap: 50px;
     justify-content: center;
-    background-color: black;
-    width: fit-content;
+    background: linear-gradient( #054381 , #0c2745);
+    width: 80%;
     padding: 100px;
     margin:90px auto;
    
@@ -74,4 +77,146 @@ nav {
     height: 100vh;
 }
 /*Section2*/
-#section-2 
+.abt {
+    text-align: center;
+    color: white;
+}
+.about-container {
+    
+    
+    border-radius: 20px;
+    justify-content: center;
+    background: linear-gradient( #054381 , #0c2745);
+    width: fit-content;
+    padding: 100px;
+    margin:90px auto;
+    color: white;
+    
+   
+}
+
+.main-about {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+/*animation box */
+
+.but:hover{
+    animation-name: Changecolor;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.but {
+    background-color: #182635;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: larger;
+    border:2px transparent;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes Changecolor {
+    from {
+        background-color:#182635;
+    }
+    to {
+        background-color: #183e67;
+    }
+}
+/* section-3 */
+.Project {
+    background: linear-gradient( #054381 , #0c2745);
+    color: white;
+    width: 800px;
+    padding: 20px;
+    margin:90px  auto;
+    text-align: center;
+    border-radius: 20px;
+}
+.Project a {
+    text-decoration: none;
+    color: white;
+    padding: 0;
+}
+.Project button {
+    background-color: #053d7c;
+    padding: 15px;
+    border-radius: 15px;
+}
+/* section-4 */
+.Tools {
+    background: linear-gradient( #054381 , #0c2745);
+    color: white;
+    width: 800px;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    margin: 90px auto;
+}
+.Tools ul {
+    list-style: none;
+}
+/* section-5 */
+.Ending {
+    background: linear-gradient( #054381 , #0c2745);
+    color: white;
+    width: 800px;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    margin: 90px auto;
+}
+/* footer */
+footer {
+    background: linear-gradient( #054381 , black);
+    
+    padding: 50px;
+    color:#05438100
+}
+/*responsive layout */
+@media screen and (min-width : 430px ) and (max-width: 768px) {
+    /* nav */
+    nav {
+        width: 100%;
+    }
+    /* section-1 */
+  .container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    width: 70%;
+
+  }
+  .Intro {
+   width: 200px;
+   height: 200px;
+   
+  }
+  /*section-2 */
+  .about-container{
+    border-radius: 0;
+    width: 70%;
+  }
+  .main-about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  /* section-3 */
+  .Project {
+    border-radius: 0;
+    width: 94%;
+  }
+  /* section-4 */
+  .Tools {
+    border-radius: 0;
+    width: 85%;
+  }
+  /* section-5 */
+  .Ending {
+    border-radius: 0;
+    width: 85%;
+  }
+}
