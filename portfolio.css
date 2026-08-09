@@ -175,10 +175,16 @@ footer {
     padding: 50px;
     color:#05438100
 }
+
+
 /*responsive layout */
 @media screen and (min-width : 430px ) and (max-width: 768px) {
+    .port  {
+        width: 99%;
+    }
     /* nav */
     nav {
+        display: none;
         width: 100%;
     }
     /* section-1 */
@@ -187,6 +193,7 @@ footer {
     flex-direction: column;
     border-radius: 0;
     width: 70%;
+    
 
   }
   .Intro {
@@ -219,4 +226,53 @@ footer {
     border-radius: 0;
     width: 85%;
   }
+  /* footer */ 
+  footer {
+    width: 85%;
+  }
+
+  
+  
 }
+ @media screen and (max-width : 429px ) {
+
+  nav {
+    display: none;}
+  
+   .container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 500px;
+   }
+   .about-container {
+    display: flex;
+    flex-direction: column;
+   }
+   .main-about {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+   }
+   .Project {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+   }
+   .Tools {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   }
+   .Ending{
+    width: 65% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   footer {
+    width: 75%;
+   }
+ }
